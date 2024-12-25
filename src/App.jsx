@@ -1,13 +1,14 @@
+import { AllRoutes } from "./assets/routes/AllRoutes";
 import {Header, Footer} from "./assets/components";
-import { Food } from "./assets/pages";
+import './App.css';
 
 function App() {
 
   return (
     <>
-      <div>
+      <div className="App">
           <Header/>
-          
+          <AllRoutes/>
       </div>
     </>
   )
