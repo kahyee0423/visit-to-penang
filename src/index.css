@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-main{
+:root {
     max-width: 1280px;
     margin: auto;
     min-height: 90vh;
     height: 2000px;
-    padding: 0px 137px;
+    padding: 0px 80px;
     background-color: #FFFCFC;
 }
 
