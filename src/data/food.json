@@ -1,0 +1,17 @@
+[
+    {
+        "photo": "char-kuey-teow.jpg",
+        "title": "Char Kuey Teow",
+        "description": "A smoky, stir fried rice noodle dish that combines savory, sweet, and umami flavors."
+    },
+    {
+        "photo": "asam-laksa.jpg",
+        "title": "Asam Laksa",
+        "description": "A noodle dish that comes with a sour fish and tamarind-based broth, gives the soup a well-balanced sour, sweet and spicy taste."
+    },
+    {
+        "photo": "cendol.jpg",
+        "title": "Cendol",
+        "description": "An iced sweet dessert that contains pandan-flavoured green rice flour jelly, coconut milk and palm sugar syrup."
+    }
+]

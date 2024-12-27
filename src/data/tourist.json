@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "photo": "penang-hill.jpg",
+        "title": "Penang Hill",
+        "openingHours": "6:30 AM - 11:00 PM",
+        "location": "Air Itam, Penang"
+    },
+    {
+        "id": "2",
+        "photo": "kampung-agong.jpg",
+        "title": "Kampung Agong",
+        "openingHours": "9:00 AM - 6:00 PM",
+        "location": "Penaga, Penang"
+    },
+    {
+        "id": "3",
+        "photo": "chew-jetty.jpg",
+        "title": "Chew Jetty",
+        "openingHours": "9:00 AM - 9:00 PM",
+        "location": "Georgetown, Penang"
+    }
+]

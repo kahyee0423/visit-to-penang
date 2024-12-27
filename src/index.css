@@ -2,12 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    max-width: 1280px;
-    margin: auto;
-    min-height: 90vh;
-    height: 2000px;
-    padding: 0px 80px;
+/* Custom Layout Styles */
+:root{
     background-color: #FFFCFC;
+    min-height: 90vh;
 }
 
+section {
+    padding: 5rem 3rem; /* Default padding for larger screens */
+    margin: auto;  
+    max-width: 1200px; 
+  }
+
+
+/* Responsive Padding */
+@media (max-width: 1024px) {
+section {
+    padding: 3.5rem 2.25rem; /* Matches max-lg:px-9 */
+  }
+}
+
+@media (max-width: 768px) {
+section{
+    padding: 3.5rem 2rem; /* Matches max-md:px-8 */
+  }
+}
+
+@media (max-width: 640px) {
+section{
+    padding: 3.5rem 1.5rem; /* Matches max-sm:px-6 */
+  }
+}

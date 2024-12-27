@@ -1,5 +1,5 @@
-import { AllRoutes } from "./assets/routes/AllRoutes";
-import {Header, Footer} from "./assets/components";
+import { AllRoutes } from "./routes/AllRoutes";
+import {Header, Footer} from "./components";
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <div className="App">
           <Header/>
           <AllRoutes/>
+          <Footer/>
       </div>
     </>
   )

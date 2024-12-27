@@ -21,11 +21,12 @@ export default {
       colors: {
         'white': '#FFFCFC',
         'pure-white': '#FFFFFF',
-        'primary': '#FFC291',
-        'secondary': '#FFECDE',
+        'primary': '#FFECDE',
+        'secondary': '#FFDABD',
         'accent-orange': '#FF8A2A',
         'accent-orange-hover': '#F66F00',
         'accent-blue': '#3468C0',
+        'grey': '#4A4A4A',
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
