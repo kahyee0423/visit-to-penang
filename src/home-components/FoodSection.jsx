@@ -8,7 +8,7 @@ export const FoodSection = () => {
     return (
       <section>
         <Title 
-          title="Food & Beverages" 
+          title="Food" 
           path="/food"
         />
 

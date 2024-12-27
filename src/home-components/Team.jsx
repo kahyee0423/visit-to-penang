@@ -4,7 +4,7 @@ export const Team = () => {
     return (
       <div className="bg-primary" id="team">
         <section>
-          <div className="flex text-3xl font-bold mb-8">Our Team</div>
+          <div className="flex text-2xl md:text-3xl font-bold mb-8">Our Team</div>
 
           <div className="flex max-[590px]:flex-wrap gap-x-4 gap-y-8 lg:gap-x-12">
             {teamData.map((member) => (
