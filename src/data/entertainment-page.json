@@ -1,0 +1,135 @@
+[
+    {
+      "photo": ["/Entertainment/the-top.jpg", "/Entertainment/thetop1.jpg", "/Entertainment/thetop2.jpg", "/Entertainment/thetop3.jpg"],
+      "title": "The TOP Penang",
+      "description": "The TOP Penang is an edutainment complex offering a range of activities suitable for visitors of all ages and interests. Whether you’re visiting with family, seeking adventure, or just exploring for fun, this destination has plenty to keep you engaged. To fully enjoy and explore everything it offers, it’s recommended to set aside 4 to 6 hours for your visit.",
+      "highlights": [
+        {
+          "activity": "Rainbow Skywalk",
+          "description": "Walk on a glass bridge and see amazing views of George Town."
+        },
+        {
+          "activity": "Jurassic Research Centre",
+          "description": "Learn about dinosaurs with life-sized models and fun activities."
+        },
+        {
+          "activity": "Tech Dome Penang",
+          "description": "Try cool science and tech experiments for all ages."
+        },
+        {
+          "activity": "The Gravityz",
+          "description": "Challenge yourself on a high-altitude rope course."
+        }
+      ],
+      "operatingHours": {
+        "mondayToFriday": "10:00 AM – 10:00 PM",
+        "weekendsAndHolidays": "9:00 AM – 10:00 PM"
+      },
+      "location": "1, Jln Penang, George Town, 10000 George Town, Pulau Pinang",
+      "locationLink": "https://www.google.com/maps?q=1,+Jln+Penang,+George+Town,+10000+George+Town,+Pulau+Pinang"
+    },
+    {
+      "photo": ["/Entertainment/escape1.JPG", "/Entertainment/escape2.jpg", "/Entertainment/escape3.jpeg"],
+      "title": "ESCAPE Penang",
+      "description": "ESCAPE Penang is an outdoor adventure park offering a mix of thrilling activities and family-friendly fun. It’s designed for visitors of all ages, blending nature and excitement in a lush, green setting. From heart-pumping challenges to relaxing slides, it’s the perfect place to enjoy the great outdoors. Plan to spend at least a full day here to make the most of your visit.",
+      "highlights": [
+        {
+          "activity": "Water Slides",
+          "description": "Enjoy thrilling and relaxing slides at the water park."
+        },
+        {
+          "activity": "Zip Lines",
+          "description": "Glide through the trees on high-speed zip lines."
+        },
+        {
+          "activity": "Rope Courses",
+          "description": "Test your skills on a variety of rope challenges."
+        },
+        {
+          "activity": "Atan’s Leap",
+          "description": "Experience the rush of a simulated free-fall."
+        },
+        {
+          "activity": "Tubby Racer",
+          "description": "Slide down grassy slopes on a tube for some family-friendly fun."
+        }
+      ],
+      "operatingHours": {
+        "everyday": "Everyday: 10:00 AM – 6:00 PM"
+      },
+      "location": "828, Jalan Teluk Bahang, Teluk Bahang, 11050 Tanjung Bungah, Pulau Pinang",
+      "locationLink":"https://maps.app.goo.gl/ikfVRbiKAeepUQKW9"
+    },
+    {
+      "photo": ["/Entertainment/lovelane1.JPG", "/Entertainment/lovelane2.jpg", "/Entertainment/lovelane3.jpg"],
+      "title": "Love Lane",
+      "description": "Step into a world where history meets modern charm. Love Lane is a bustling street that offers a delightful blend of colonial architecture, vibrant art galleries, and trendy spots. With its boutique hotels, cozy cafes, and unique shops, it’s a perfect destination for a leisurely stroll. Uncover hidden gems and immerse yourself in the cultural richness of this lively street.",
+      "highlights": [
+        {
+          "activity": "Cafes & Restaurants",
+          "description": "Savor local delicacies and international flavors in intimate, cozy settings."
+        },
+        {
+          "activity": "Art Galleries & Shops",
+          "description": "Discover creative local art and one-of-a-kind souvenirs."
+        },
+        {
+          "activity": "Historical Charm",
+          "description": "Wander through buildings that showcase the colonial-era heritage and rich culture."
+        }
+      ],
+      "operatingHours": {
+        "everyday": "Everyday: Anytime"
+      },
+      "location": "Georgetown, 10200 George Town, Penang",
+      "locationLink": "https://www.google.com/maps/place/Love+Ln,+Georgetown,+10200+George+Town,+Penang"
+    },
+    {
+      "photo": ["/Entertainment/SQ1.jpg", "/Entertainment/SQ2.jpg", "/Entertainment/SQ3.jpg"],
+      "title": "Straits Quay Marina Mall",
+      "description": "Relax and unwind by the waterfront at Straits Quay Marina Mall. Enjoy a serene shopping experience with stunning views of the marina, offering everything from retail stores to cafes and restaurants. The atmosphere is perfect for a leisurely day of shopping, dining, and enjoying the sea breeze.",
+      "highlights": [
+        {
+          "activity": "Shopping & Dining",
+          "description": "Explore a mix of retail stores and indulge in meals with a view."
+        },
+        {
+          "activity": "Events & Entertainment",
+          "description": "Attend live performances or special events throughout the year."
+        },
+        {
+          "activity": "Boat Watching",
+          "description": "Watch yachts and boats glide by in the marina, adding to the tranquil vibe."
+        }
+      ],
+      "operatingHours": {
+        "everyday": "Everyday: 10:00 AM – 10:00 PM"
+      },
+      "location": "Jalan Seri Tanjung Pinang 10470 Tanjong Tokong, Penang Malaysia",
+      "locationLink": "https://maps.app.goo.gl/dkvoTsL91JVnzCgB8"
+    },
+    {
+      "photo": ["/Entertainment/3dART1.jpg", "/Entertainment/3dART2.jpg", "/Entertainment/3dART3.jpg"],
+      "title": "Penang 3D Trick Art Museum",
+      "description": "Step into a realm of creativity and optical illusions at the Penang 3D Trick Art Museum. This interactive museum is a playground for your imagination, where you can pose with stunning 3D artwork and capture playful photos. It’s an exciting experience for visitors of all ages, offering plenty of fun and laughter.",
+      "highlights": [
+        {
+          "activity": "Interactive Exhibits",
+          "description": "Step into 3D artwork and strike fun poses, capturing unique and memorable photos that bring the art to life."
+        },
+        {
+          "activity": "Playful Photo Opportunities",
+          "description": "Engage with optical illusions to create amazing, one-of-a-kind photos that will wow your friends and family."
+        },
+        {
+          "activity": "Family Fun",
+          "description": "Perfect for all ages, the museum offers an exciting experience for families and groups to explore, interact, and create lasting memories together."
+        }
+      ],
+      "operatingHours": {
+        "everyday": "Everyday: Anytime"
+      },
+      "location": "10, Lebuh Penang, George Town, 10200 George Town, Pulau Pinang",
+      "locationLink": "https://www.google.com/maps?q=10,+Lebuh+Penang,+George+Town,+10200+George+Town,+Pulau+Pinang"
+    }
+  ]
