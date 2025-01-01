@@ -31,11 +31,14 @@ export default {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      transitionDuration: {
+        '500': '500ms',  // Custom transition duration
+      },
+      transitionTimingFunction: {
+        'ease-in-out': 'ease-in-out',  // Custom easing function
+      },
     },
+    
   },
   plugins: [],
 }
-
-
-
-
