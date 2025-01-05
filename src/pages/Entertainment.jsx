@@ -1,19 +1,42 @@
 import { useState, useRef, useEffect } from "react";
-import entertainmentData from "../data/entertainment-page.json";
 import BubbleContainer from "../components/entertainment/bubbleContainer";
 
 export const Entertainment = () => {
-  const [currentImageIndices, setCurrentImageIndices] = useState(
-    entertainmentData.map(() => 0)
-  );
+  const [entertainmentData, setEntertainmentData] = useState([]);
+  const [currentImageIndices, setCurrentImageIndices] = useState([]);
   const sectionRefs = useRef([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+
+  useEffect(() => {
+    const fetchEntertainmentData = async () => {
+      setLoading(true);
+      setError(null);
+      try {
+        const response = await fetch('http://localhost:5000/api/entertainment-page');
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        setEntertainmentData(data);
+        setCurrentImageIndices(data.map(() => 0))
+      } catch (error) {
+        setError(error)
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchEntertainmentData();
+  }, []);
+
 
   const goToImage = (sectionIndex, direction) => {
     setCurrentImageIndices((prev) =>
       prev.map((current, index) =>
         index === sectionIndex
           ? (current + direction + entertainmentData[sectionIndex].photo.length) %
-            entertainmentData[sectionIndex].photo.length
+          entertainmentData[sectionIndex].photo.length
           : current
       )
     );
@@ -36,6 +59,7 @@ export const Entertainment = () => {
     return <p>{hours.everyday}</p>;
   };
 
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -47,13 +71,15 @@ export const Entertainment = () => {
       });
     }, { threshold: 0.2 });
 
-    sectionRefs.current.forEach((section, index) => {
-      if (index !== 0) {
-        observer.observe(section);
-      } else {
-        section.classList.add("opacity-100", "translate-y-0");
-      }
-    });
+    if (sectionRefs.current) {
+      sectionRefs.current.forEach((section, index) => {
+        if (index !== 0) {
+          observer.observe(section);
+        } else {
+          section.classList.add("opacity-100", "translate-y-0");
+        }
+      });
+    }
 
     return () => {
       if (observer) {
@@ -62,7 +88,16 @@ export const Entertainment = () => {
         });
       }
     };
-  }, []);
+  }, [entertainmentData]);
+
+  if (loading) {
+    return <div>Loading Entertainment Data...</div>
+  }
+
+  if (error) {
+    return <div>Error: {error.message}</div>
+  }
+
 
   return (
     <div className="Poppins relative">
@@ -87,7 +122,7 @@ export const Entertainment = () => {
             <section
               key={sectionIndex}
               ref={(el) => (sectionRefs.current[sectionIndex] = el)}
-              className={`p-6 md:p-8 rounded-lg shadow-md transition-all duration-500 mt-8 opacity-0 transform translate-y-4`}
+              className="p-6 md:p-8 rounded-lg shadow-md transition-all duration-500 mt-8 opacity-0 transform translate-y-4"
             >
               <div className="relative w-full h-96 md:h-112 mb-2">
                 <img
@@ -100,14 +135,14 @@ export const Entertainment = () => {
                   aria-label="Previous image"
                   className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black text-white w-10 h-10 flex items-center justify-center p-2 rounded-full font-bold"
                 >
-                  &#10094;
+                  ❮
                 </button>
                 <button
                   onClick={() => goToImage(sectionIndex, 1)}
                   aria-label="Next image"
                   className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black text-white w-10 h-10 flex items-center justify-center p-2 rounded-full font-bold"
                 >
-                  &#10095;
+                  ❯
                 </button>
               </div>
 
@@ -144,20 +179,20 @@ export const Entertainment = () => {
 
                 <div>
                   <h3 className="text-base font-semibold mb-1 flex items-center">
-                    <i className="fas fa-map-marker-alt text-lg mr-2"></i> 
-                      <a
-                        href={item.locationLink} // Link from JSON
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-accent-blue underline"
-                      >
+                    <i className="fas fa-map-marker-alt text-lg mr-2"></i>
+                    <a
+                      href={item.locationLink} // Link from JSON
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-accent-blue underline"
+                    >
                       Location
-                      </a>
+                    </a>
                   </h3>
-                    <p className="text-base">
-                      {item.location}
-                    </p>
-                  </div>
+                  <p className="text-base">
+                    {item.location}
+                  </p>
+                </div>
               </div>
             </section>
           ))}
