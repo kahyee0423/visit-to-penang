@@ -1,0 +1,64 @@
+{
+    "foods": [
+      {
+        "title": "Char Koay Teow",
+        "description": "A beloved Penang dish of stir-fried flat noodles.",
+        "image": "/Food/char-koay-teow.jpg",
+        "locations": [
+          "Kimberly Street Char Koay Teow",
+          "Ah Leng Char Koay Teow",
+          "Lorong Selamat Char Koay Teow"
+        ]
+      },
+      {
+        "title": "Asam Laksa",
+        "description": "Tangy, spicy, and flavorful noodle soup.",
+        "image": "/Food/asam-laksa.jpg",
+        "locations": [
+          "Penang Road Famous Laksa",
+          "Laksalicious",
+          "Kim's Laksa"
+        ]
+      },
+      {
+        "title": "Cendol",
+        "description": "A refreshing dessert with coconut milk and gula melaka.",
+        "image": "/Food/cendol.jpg",
+        "locations": [
+          "Penang Road Famous Teochew Chendul",
+          "Tony's Ice Kacang & Cendol",
+          "Cendol Asli Pak Haji"
+        ]
+      },
+      {
+        "title": "Nasi Kandar",
+        "description": "Mixed rice served with various curries and side dishes.",
+        "image": "/Food/nasi-kandar.jpg",
+        "locations": [
+          "Shariff Nasi Kandar Gelugor",
+          "Line Clear Nasi Kandar",
+          "Hameediyah Restaurant"
+        ]
+      },
+      {
+        "title": "Otak-Otak",
+        "description": "Spicy fish paste wrapped in banana leaves.",
+        "image": "/Food/otak-otak.jpg",
+        "locations": [
+          "Sin Kim San Cafe",
+          "New World Park",
+          "Khuntai Restaurant"
+        ]
+      },
+      {
+        "title": "Hokkien Prawn Mee",
+        "description": "Rich prawn broth with noodles and toppings.",
+        "image": "/Food/penang-hokkien-mee.jpg",
+        "locations": [
+          "Granny's Hokkien Mee",
+          "Super Hokkien Mee",
+          "888 Hokkien Mee @ Lebuh Pesgrave"
+        ]
+      }
+    ]
+  }

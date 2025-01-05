@@ -3,13 +3,11 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 
-
 const app = express();
 const port = 5000;
 
 app.use(cors());
 app.use(express.json());
-
 
 // Function to read JSON data
 function readJsonFile(filePath) {
@@ -83,6 +81,16 @@ app.get('/api/entertainment-page', (req, res) => {
       res.status(500).json({ message: 'Failed to load entertainment page data' });
     }
   });
+
+  app.get('/api/food-page', (req, res) => { 
+    const filePath = path.join(__dirname, 'data', 'food-page.json'); 
+      const data = readJsonFile(filePath);
+    if (data) {
+        res.json(data);
+    } else {
+      res.status(500).json({ message: 'Failed to load food page data' });
+  }
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
