@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 export const Header = () => {
   const [hidden, setHidden] = useState(true);
   const [isSticky, setIsSticky] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const activeClass = 'block py-2 px-3 text-white bg-accent-orange rounded md:bg-transparent md:text-accent-orange md:p-0';
 
   const inactiveClass = 'block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-accent-orange-hover md:p-0';
+
 
   // Handle scroll behavior
   useEffect(() => {
@@ -32,15 +35,36 @@ export const Header = () => {
     };
   }, [lastScrollY]);
 
+  // Handle when header's logo is clicked
+  const handleLogoClick = () => {
+    if (location.pathname === "/") {
+      // Scroll to the top if already on the homepage
+      document.getElementById("hero-section")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Navigate to the homepage
+      navigate("/");
+    }
+  };
+
   return (
     <header className={`${isSticky ? "sticky top-0" : "-top-20"} transition-all duration-300 bg-white border-gray-200 z-50`}>
       <nav className="bg-white border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-5">
           {/* Logo Section */}
-          <ScrollLink to="hero-section" spy={true} smooth={true} offset={-100} duration={1000} className="flex items-center cursor-pointer">
-              <img src='Logo.png' className="h-9 w-auto p-0 m-0" alt="Logo" loading="lazy"/>
-              <span className="self-center text-base font-bold whitespace-nowrap">enang Voyage</span>
-          </ScrollLink>
+          <div
+            onClick={handleLogoClick}
+            className="flex items-center cursor-pointer"
+          >
+            <img
+              src="Logo.png"
+              className="h-9 w-auto p-0 m-0"
+              alt="Logo"
+              loading="lazy"
+            />
+            <span className="self-center text-base font-bold whitespace-nowrap">
+              enang Voyage
+            </span>
+          </div>
 
           {/* Hamburger section */}
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">

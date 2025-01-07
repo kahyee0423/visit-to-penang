@@ -3,5 +3,4 @@ export { About } from "./About";
 export { TouristSection } from "./TouristSection";
 export { EntertainmentSection } from "./EntertainmentSection";
 export { FoodSection } from "./FoodSection";
-export { Team } from "./Team";
 

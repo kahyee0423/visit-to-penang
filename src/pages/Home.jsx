@@ -1,4 +1,4 @@
-import { HeroSection, About, TouristSection, EntertainmentSection, FoodSection, Team } from "../home-components";
+import { HeroSection, About, TouristSection, EntertainmentSection, FoodSection} from "../home-components";
 
 export const Home = () => {
   return (
@@ -8,7 +8,6 @@ export const Home = () => {
       <TouristSection/>
       <EntertainmentSection/>
       <FoodSection/>
-      <Team/>
     </>
     
   )
