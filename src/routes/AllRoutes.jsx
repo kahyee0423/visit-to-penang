@@ -5,11 +5,11 @@ export const AllRoutes = ()=>{
   return (
     <div>
         <Routes>
-            <Route path="" element={<Home/>} title=""></Route>
-            <Route path="tourist-spots" element={<TouristSpots/>} title=""></Route>
-            <Route path="food" element={<Food/>} title=""></Route>
-            <Route path="entertainment" element={<Entertainment/>} title=""></Route>
+            <Route path="" element={<Home/>}></Route>
+            <Route path="tourist-spots" element={<TouristSpots/>}></Route>
+            <Route path="food" element={<Food/>}></Route>
+            <Route path="entertainment" element={<Entertainment/>}></Route>
         </Routes>
-    </div>
+    </div> //ok
   )
 }
