@@ -26,7 +26,7 @@
         "weekendsAndHolidays": "9:00 AM - 10:00 PM"
       },
       "location": "1, Jln Penang, George Town, 10000 George Town, Pulau Pinang",
-      "locationLink": "https://www.google.com/maps?q=1,+Jln+Penang,+George+Town,+10000+George+Town,+Pulau+Pinang"
+      "locationLink": "https://maps.app.goo.gl/GzjXziAJSnA1hQPB7"
     },
     {
       "photo": ["/Entertainment/escape1.JPG", "/Entertainment/escape2.jpg", "/Entertainment/escape3.jpeg"],
@@ -127,7 +127,7 @@
         }
       ],
       "operatingHours": {
-        "everyday": "Everyday: Anytime"
+        "everyday": "Everyday: 9:00 AM - 6:00 PM"
       },
       "location": "10, Lebuh Penang, George Town, 10200 George Town, Pulau Pinang",
       "locationLink": "https://www.google.com/maps?q=10,+Lebuh+Penang,+George+Town,+10200+George+Town,+Pulau+Pinang"
