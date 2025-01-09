@@ -33,21 +33,21 @@ export const TouristSpots = () => {
         return <div>Error: {error.message}</div>
      }
 return (
-<div className="font-sans">
+  <section>
   {/* Title */}
-    <div className="container mx-auto text-center mt-4">
-      <p className="text-xl md:text-2xl font-bold text-gray-700">
+    <div className="container mx-auto text-center">
+      <p className="text-3xl md:text-2xl font-bold mb-8">
         Discover Hidden Gems: Explore Must-Visit Tourist Spots
       </p>
     </div>
-  {touristSpots.map((spot, index) => (
-    <div key={index}>
+      {touristSpots.map((spot, index) => (
+      <div key={index}>
 
      <div className="relative flex justify-center">
      <img src={spot.coverImage} alt="" className="w-1/2 h-70 object-cover" />
       </div>
      
-      <section className="py-12">
+      <div className="py-12">
         <div className="container mx-auto text-center bg-purple-100">
           <h2 className="text-3xl font-bold text-gray-800 uppercase mb-4">{spot.name}</h2>
         </div>
@@ -90,12 +90,10 @@ return (
               </div>
              </div>
             </div>
-         </section>
+      </div>
          
-     </div>
-
-  ))}
-
- </div>
+      </div>
+    ))}
+  </section>
   );
 };

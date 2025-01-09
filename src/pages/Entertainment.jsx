@@ -100,13 +100,14 @@ export const Entertainment = () => {
 
 
   return (
-    <div className="Poppins relative">
+    
+    <section className="relative">
       {/* Falling Bubbles Background */}
       <BubbleContainer />
 
       {/* Content */}
       <div className="relative z-10">
-        <section className="text-center px-4 md:px-6">
+        <div className="text-center px-4 md:px-6">
           <h1 className="text-xl md:text-3xl font-bold text-black-700">
             Penang's <span className="text-accent-orange">Top Picks</span>:{" "}
             <span className="text-accent-blue">Entertainment</span> at Its Best
@@ -115,7 +116,7 @@ export const Entertainment = () => {
             From Thrills and Adventures to Cultural Marvels – Explore Penang’s
             Must-Visit Entertainment Spots!
           </p>
-        </section>
+        </div>
 
         <div className="mt-8 px-6 md:px-8 max-w-6xl mx-auto">
           {entertainmentData.map((item, sectionIndex) => (
@@ -198,6 +199,6 @@ export const Entertainment = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

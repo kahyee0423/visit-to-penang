@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/Food/FoodCard";
+import Card from "../components/food/FoodCard";
 
  export const Food = () => {
      const [foodData, setFoodData] = useState(null);
@@ -42,7 +42,7 @@ import Card from "../components/Food/FoodCard";
    return (
     <div>
         <header className="bg-primary px-32 py-20 flex flex-col items-center gap-12 shadow-md">
-            <h1 className="text-center text-4xl font-bold py-2.5 leading-relaxed font-sans tracking-wide text-grey">
+            <h1 className="text-center text-4xl font-bold py-2.5 leading-relaxed font-sans tracking-wide">
                 Penang's{" "}
                 <span className="text-accent-orange font-bold">Top Picks</span>: Scrumptious{" "}
                 <span className="text-accent-blue font-bold">Food & Beverages</span>
