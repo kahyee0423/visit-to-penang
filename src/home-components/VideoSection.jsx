@@ -8,7 +8,6 @@ export const VideoSection = ({
     <div className={`relative ${className} flex justify-center items-center p-12`}> {/* Added padding */}
       <video 
         className="w-1/8 h-auto max-w-full sm:max-w-1/3 md:max-w-1/5 lg:max-w-1/6 shadow-lg"  // Even smaller video sizes
-        autoPlay 
         loop 
         controls
       >
