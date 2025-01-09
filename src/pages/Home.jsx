@@ -1,14 +1,14 @@
-import { HeroSection, About, TouristSection, EntertainmentSection, FoodSection} from "../home-components";
+import { HeroSection, About, VideoSection, TouristSection, EntertainmentSection, FoodSection} from "../home-components";
 
 export const Home = () => {
   return (
     <>
       <HeroSection/>
       <About/>
+      <VideoSection/>
       <TouristSection/>
       <EntertainmentSection/>
       <FoodSection/>
     </>
-    
   )
 }
