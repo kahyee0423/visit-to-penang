@@ -35,16 +35,27 @@ export const Header = () => {
     };
   }, [lastScrollY]);
 
-  // Handle when header's logo is clicked
   const handleLogoClick = () => {
     if (location.pathname === "/") {
-      // Scroll to the top if already on the homepage
-      document.getElementById("hero-section")?.scrollIntoView({ behavior: "smooth" });
+      // User is on the homepage
+      const heroSection = document.getElementById("hero-section");
+      if (heroSection) {
+        // Calculate the target position with offset
+        const offset = 50; // Adjust this value for your specific header height or desired offset
+        const topPosition = heroSection.getBoundingClientRect().top + window.scrollY - offset;
+  
+        // Smoothly scroll to the adjusted position
+        window.scrollTo({
+          top: topPosition,
+          behavior: "smooth",
+        });
+      }
     } else {
       // Navigate to the homepage
       navigate("/");
     }
-  };
+  };  
+  
 
   return (
     <header className={`${isSticky ? "sticky top-0" : "-top-20"} transition-all duration-300 bg-white border-gray-200 z-50`}>
