@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/food/FoodCard";
+import Card from "../components/Food/FoodCard";
 
 export const Food = () => {
     const [foodData, setFoodData] = useState(null);
