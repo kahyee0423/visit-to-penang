@@ -6,15 +6,14 @@ export const FoodSection = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-
   useEffect(() => {
     const fetchFoodData = async () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch('http://localhost:5000/api/food');
+        const response = await fetch('/data/food.json');
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+          throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         setFoodData(data);
@@ -24,18 +23,19 @@ export const FoodSection = () => {
         setLoading(false);
       }
     };
+
     fetchFoodData();
   }, []);
 
-    if(loading) {
-       return <div>Loading food items...</div>
-    }
-    if(error) {
-        return <div>Error: {error.message}</div>
-    }
+  if (loading) {
+    return <div>Loading food items...</div>;
+  }
 
-    const first3_foodData = foodData.slice(0, 3);
+  if (error) {
+    return <div>Error: {error.message}</div>;
+  }
 
+  const first3_foodData = foodData.slice(0, 3);
 
   return (
     <section>

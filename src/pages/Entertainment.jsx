@@ -8,35 +8,34 @@ export const Entertainment = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-
   useEffect(() => {
     const fetchEntertainmentData = async () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch('http://localhost:5000/api/entertainment-page');
+        const response = await fetch('/data/entertainment-page.json');
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         setEntertainmentData(data);
-        setCurrentImageIndices(data.map(() => 0))
+        setCurrentImageIndices(data.map(() => 0));
       } catch (error) {
-        setError(error)
+        setError(error);
       } finally {
         setLoading(false);
       }
-    }
+    };
+
     fetchEntertainmentData();
   }, []);
-
 
   const goToImage = (sectionIndex, direction) => {
     setCurrentImageIndices((prev) =>
       prev.map((current, index) =>
         index === sectionIndex
           ? (current + direction + entertainmentData[sectionIndex].photo.length) %
-          entertainmentData[sectionIndex].photo.length
+            entertainmentData[sectionIndex].photo.length
           : current
       )
     );
@@ -58,7 +57,6 @@ export const Entertainment = () => {
     }
     return <p>{hours.everyday}</p>;
   };
-
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -91,21 +89,16 @@ export const Entertainment = () => {
   }, [entertainmentData]);
 
   if (loading) {
-    return <div>Loading Entertainment Data...</div>
+    return <div>Loading Entertainment Data...</div>;
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>
+    return <div>Error: {error.message}</div>;
   }
 
-
   return (
-    
     <section className="relative">
-      {/* Falling Bubbles Background */}
       <BubbleContainer />
-
-      {/* Content */}
       <div className="relative z-10">
         <div className="text-center px-4 md:px-6">
           <h1 className="text-xl md:text-3xl font-bold text-black-700">
@@ -182,7 +175,7 @@ export const Entertainment = () => {
                   <h3 className="text-base font-semibold mb-1 flex items-center">
                     <i className="fas fa-map-marker-alt text-lg mr-2"></i>
                     <a
-                      href={item.locationLink} // Link from JSON
+                      href={item.locationLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-accent-blue underline"

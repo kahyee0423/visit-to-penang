@@ -11,7 +11,7 @@ export const EntertainmentSection = () => {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch('http://localhost:5000/api/entertainment');
+                const response = await fetch('/data/entertainment.json');
                 if (!response.ok) {
                      throw new Error(`HTTP error! status: ${response.status}`);
                  }
