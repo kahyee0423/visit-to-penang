@@ -1,0 +1,54 @@
+[
+    {
+      "name": "Penang Hill",
+      "description": "Penang Hill is a must-visit destination offering a serene escape from the bustling city. Perched high above George Town, it treats visitors to stunning panoramic views, cool refreshing air, and lush greenery.",
+      "images": [
+        "./TouristSpots/PenangHill/Picture1.png",
+        "./TouristSpots/PenangHill/Picture2.png",
+        "./TouristSpots/PenangHill/Picture3.png",
+        "./TouristSpots/PenangHill/Picture4.png",
+        "./TouristSpots/PenangHill/Picture5.png"
+      ],
+      "contact": {
+        "address": "11500 Air Itam, Pulau Pinang",
+        "phone": "04-828 8880"
+      },
+      "icon": "./TouristSpots/flutter-icon.png",
+      "coverImage": "./TouristSpots/PenangHill/cover.jpg"
+    },
+    {
+      "name": "Kampung Agong",
+      "description": "Kampung Agong offers a serene escape into the heart of Malaysia's countryside. With its idyllic coconut groves, lush paddy fields, and traditional kampung vibes, it's the perfect spot to relax, reconnect with nature, and capture stunning photos.",
+      "images": [
+        "./TouristSpots/KampungAgong/Picture2.png",
+        "./TouristSpots/KampungAgong/Picture3.png",
+        "./TouristSpots/KampungAgong/Picture4.png",
+        "./TouristSpots/KampungAgong/Picture5.png",
+        "./TouristSpots/KampungAgong/Picture6.png"
+      ],
+      "video": "./TouristSpots/KampungAgong/video.mp4",
+      "contact": {
+        "address": "13100 Penaga, Pulau Pinang",
+        "phone": "012-4817795"
+      },
+      "icon": "./TouristSpots/flutter-icon.png"
+    },
+     {
+      "name": "Chew Jetty",
+      "description": "Chew Jetty is a living heritage site that offers a glimpse into Penang's rich history and culture. This charming waterfront settlement, with its wooden stilt houses and vibrant community, tells the story of Chinese immigrants who settled here generations ago.",
+      "mainImage": "./TouristSpots/ChewJetty/Picture1.png",
+      "images": [
+         "./TouristSpots/ChewJetty/Picture2.png",
+        "./TouristSpots/ChewJetty/Picture3.png",
+         "./TouristSpots/ChewJetty/Picture4.png",
+         "./TouristSpots/ChewJetty/Picture5.png",
+        "./TouristSpots/ChewJetty/Picture6.png"
+  
+      ],
+       "contact": {
+        "address": "Georgetown, 10300 George Town, Penang",
+        "phone": "011-624 62884"
+      },
+      "icon": "./TouristSpots/flutter-icon.png"
+    }
+  ]

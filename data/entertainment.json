@@ -1,0 +1,20 @@
+[
+    {
+        "photo": "the-top.webp",
+        "title": "The TOP Penang",
+        "openingHours": "6:30 AM - 11:00 PM",
+        "location": "Georgetown, Penang"
+    },
+    {
+        "photo": "escape.jpg",
+        "title": "ESCAPE Penang",
+        "openingHours": "10:30 AM - 6:00 PM",
+        "location": "Teluk Bahang, Penang"
+    },
+    {
+        "photo": "lovelane.jpg",
+        "title": "Love Lane",
+        "openingHours": "Anytime",
+        "location": "Georgetown, Penang"
+    }
+]
